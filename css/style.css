@@ -1,11 +1,12 @@
-body{
+body {
     font-family: 'Dancing Script', cursive;
 
 }
-#content{
+
+#content {
     position: absolute;
     float: left;
-    background-color:#fd0054;
+    background-color: #fd0054;
     width: 30%;
     left: 0;
     top: 0;
@@ -13,11 +14,11 @@ body{
     margin: 0;
 }
 
-#content2{
+#content2 {
     position: absolute;
     float: right;
     background-color: #a80038;
-    text-align:end;
+    text-align: end;
     margin: 0;
     width: 70%;
     right: 0;
@@ -26,37 +27,39 @@ body{
     margin: 0;
     text-align: center;
 }
-#container{
+
+#container {
     position: relative;
-    display:inline-grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5,1fr);
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     border: 5px solid #2b2024;
-    width:  700px;
+    width: 700px;
     height: 700px;
     margin: 0;
     padding: 0;
-    top:35px;
+    top: 35px;
 }
 
-.box{
+.box {
     border: 0.2px solid #2b2024;
     background-color: #fbf9fa;
 }
 
-.name{
+.name {
     margin: 10px 10px 10px 50px;
-    padding: 4px;   
+    padding: 4px;
     font-size: 60px;
     font-weight: 500;
     display: block;
-    color: #fbf9fa;    
+    color: #fbf9fa;
 }
-.btn{
+
+.btn {
     display: block;
     margin: 30px 40px 30px 90px;
     font-family: 'Dancing Script', cursive;
-    padding:4px;
+    padding: 4px;
     font-size: 25px;
     width: 180px;
     height: 60px;
@@ -66,7 +69,7 @@ body{
     background-color: #fbf9fa;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.1);
     box-shadow: 2px 2px 2rem white;
 }
