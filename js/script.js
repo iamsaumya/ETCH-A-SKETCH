@@ -1,10 +1,12 @@
-fillBoxes();
 let resizebtn = document.getElementById("resize");
 let blackbtn = document.getElementById("black");
 let clearSketchbtn = document.getElementById("clearSketch");
+let randomColors = document.getElementById("randomColors");
+
 resizebtn.addEventListener("click", constructGrid);
 blackbtn.addEventListener("click",fillBoxes);
 clearSketchbtn.addEventListener("click",clearBoxes);
+randomColors.addEventListener("click",fillBoxesRandom);
 
 function constructGrid(e) {
     const container = document.getElementById("container");
@@ -37,10 +39,29 @@ function clearBoxes(e){
      box.style.backgroundColor ="white";
     });
 }
+
+function getRandomColor(){
+    let letters = "0123456789ABCDEF";
+    let generatedColor = "#";
+    for(let i = 0 ; i<6 ;i++){
+            generatedColor += letters.charAt(Math.floor(Math.random()*16));
+    }
+    
+    return generatedColor;
+}
+
 function fillBoxes(e){
+    clearBoxes();
     let boxes = document.querySelectorAll(".box");
     boxes.forEach(box => box.addEventListener("mouseover",function(e){
-    e.target.style.backgroundColor = "black";
+      box.style.backgroundColor = "black";
     }));
 }
 
+function fillBoxesRandom(e){
+    clearBoxes();
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => box.addEventListener("mouseover",function(e){
+        box.style.backgroundColor =  getRandomColor();
+    }));
+}
