@@ -1,6 +1,8 @@
 fillBoxes();
 let resizebtn = document.getElementById("resize");
+let blackbtn = document.getElementById("black");
 resizebtn.addEventListener("click", constructGrid);
+blackbtn.addEventListener("click",fillBoxes);
 
 function constructGrid(e) {
     const container = document.getElementById("container");
@@ -27,7 +29,7 @@ function constructGrid(e) {
     fillBoxes();
 }
 
-function fillBoxes(){
+function fillBoxes(e){
     let boxes = document.querySelectorAll(".box");
     boxes.forEach(box => box.addEventListener("mouseover",function(e){
     e.target.style.backgroundColor = "black";
