@@ -28,8 +28,8 @@
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(5,1fr);
     border: 10px solid #6c567b;
-    width:  790px;
-    height: 790px;
+    width:  700px;
+    height: 700px;
     margin: 0;
     padding: 0;
     top:35px;
@@ -51,8 +51,8 @@
     display: block;
     margin: 20px 20px 20px 50px;
     padding:4px;
-    font-size: 45px;
-    width: 380px;
-    height: 120px;
+    font-size: 35px;
+    width: 300px;
+    height: 80px;
     border-radius: 5%;
 }
