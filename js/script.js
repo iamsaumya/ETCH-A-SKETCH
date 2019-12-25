@@ -1,5 +1,5 @@
+fillBoxes();
 let resizebtn = document.getElementById("resize");
-
 resizebtn.addEventListener("click", constructGrid);
 
 function constructGrid(e) {
@@ -24,8 +24,13 @@ function constructGrid(e) {
     }
     container.style.gridTemplateColumns = string;
     container.style.gridTemplateRows = string;
-
-    console.log(container);
+    fillBoxes();
 }
 
+function fillBoxes(){
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(box => box.addEventListener("mouseover",function(e){
+    e.target.style.backgroundColor = "black";
+    }));
+}
 
