@@ -1,8 +1,10 @@
 fillBoxes();
 let resizebtn = document.getElementById("resize");
 let blackbtn = document.getElementById("black");
+let clearSketchbtn = document.getElementById("clearSketch");
 resizebtn.addEventListener("click", constructGrid);
 blackbtn.addEventListener("click",fillBoxes);
+clearSketchbtn.addEventListener("click",clearBoxes);
 
 function constructGrid(e) {
     const container = document.getElementById("container");
@@ -29,6 +31,12 @@ function constructGrid(e) {
     fillBoxes();
 }
 
+function clearBoxes(e){
+    let boxes = document.querySelectorAll(".box");
+    boxes.forEach(box =>{
+     box.style.backgroundColor ="white";
+    });
+}
 function fillBoxes(e){
     let boxes = document.querySelectorAll(".box");
     boxes.forEach(box => box.addEventListener("mouseover",function(e){
