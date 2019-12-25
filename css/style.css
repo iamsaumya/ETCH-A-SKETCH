@@ -1,7 +1,11 @@
+body{
+    font-family: 'Dancing Script', cursive;
+
+}
 #content{
     position: absolute;
     float: left;
-    background-color:pink;
+    background-color:#fd0054;
     width: 30%;
     left: 0;
     top: 0;
@@ -12,7 +16,7 @@
 #content2{
     position: absolute;
     float: right;
-    background-color: palevioletred;
+    background-color: #a80038;
     text-align:end;
     margin: 0;
     width: 70%;
@@ -27,7 +31,7 @@
     display:inline-grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(5,1fr);
-    border: 10px solid #6c567b;
+    border: 5px solid #2b2024;
     width:  700px;
     height: 700px;
     margin: 0;
@@ -36,23 +40,33 @@
 }
 
 .box{
-    border: 1px solid #c06c84;
-    background-color: #f67280;
+    border: 0.2px solid #2b2024;
+    background-color: #fbf9fa;
 }
 
 .name{
     margin: 10px 10px 10px 50px;
-    padding: 4px;
+    padding: 4px;   
     font-size: 60px;
     font-weight: 500;
     display: block;
+    color: #fbf9fa;    
 }
 .btn{
     display: block;
-    margin: 20px 20px 20px 50px;
+    margin: 60px 60px 60px 90px;
+    font-family: 'Dancing Script', cursive;
     padding:4px;
-    font-size: 35px;
-    width: 300px;
-    height: 80px;
-    border-radius: 5%;
+    font-size: 25px;
+    width: 180px;
+    height: 60px;
+    color: #fd0054;
+    font-weight: 600;
+    border-radius: 8%;
+    background-color: #fbf9fa;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2rem white;
 }
