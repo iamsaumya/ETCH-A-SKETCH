@@ -1,6 +1,5 @@
 body {
     font-family: 'Dancing Script', cursive;
-
 }
 
 #content {
@@ -18,7 +17,6 @@ body {
     position: absolute;
     float: right;
     background-color: #a80038;
-    text-align: end;
     margin: 0;
     width: 70%;
     right: 0;
@@ -33,7 +31,7 @@ body {
     display: inline-grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    border: 5px solid #2b2024;
+    border: 1px solid #2b2024;
     width: 700px;
     height: 700px;
     margin: 0;
@@ -42,7 +40,7 @@ body {
 }
 
 .box {
-    border: 0.2px solid #2b2024;
+    border: 0.1px solid grey;
     background-color: #fbf9fa;
 }
 
